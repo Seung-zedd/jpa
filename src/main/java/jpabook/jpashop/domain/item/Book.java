@@ -12,9 +12,10 @@ import java.util.List;
 @Entity
 @DiscriminatorValue("B")
 @Getter
+@Setter // 테스트코드 이슈
 @SuperBuilder
 @AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@NoArgsConstructor
 public class Book extends Item {
 
     private String author;
